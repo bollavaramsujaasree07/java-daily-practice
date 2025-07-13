@@ -1,0 +1,80 @@
+oops concepts in java
+1.object
+2.class
+3.abstraction
+4.encapsulation
+5.inheritance
+6.polymorphism
+
+1.object: object is defined as real world entity.
+*it consists of properties and tasks to be performed.
+*properties are defined as attributes of an object.
+*attributes are defined as variables of an object.
+ex:-human-name,color,hight etc --walk(),run(),read().
+
+2.class: class is a blueprint or template from which objects are created.
+*it is a collection of objects.
+*it is a user defined data type.
+*it is a logical entity. 
+*it is a collection of variables and methods.
+ex:-class human{    
+    String name;
+    int height;
+    void walk(){
+        //code to walk
+    }
+}                                    
+
+3.abstraction: abstraction is the process of hiding the implementation details and showing only the functionality to the user.
+*it helps to reduce complexity and increase efficiency.     
+*it can be achieved using abstract classes and interfaces.
+4.encapsulation: encapsulation is the process of wrapping data (variables) and code (methods) together as a single unit.
+*it is used to restrict direct access to some of an object's components.    
+*it is achieved by using access modifiers (private, protected, public).
+*it helps to protect the integrity of the object.       
+*ex:-class human{
+    private String name;
+    private int height;
+    
+    public void setName(String name) {
+        this.name = name;
+    }
+    
+    public String getName() {
+        return name;
+    }
+}
+
+5.inheritance: inheritance is the mechanism in which one class acquires the properties and behaviors of another class.
+*it allows code reusability and establishes a relationship between classes. 
+*it can be achieved using the 'extends' keyword.
+*ex:-class Animal {
+    void eat() {
+        System.out.println("Eating...");
+    }
+}   
+
+class Dog extends Animal {
+    void bark() {
+        System.out.println("Barking...");
+    }
+}       
+
+6.polymorphism: polymorphism is the ability of an object to take on many forms.
+*it allows methods to do different things based on the object it is acting upon.        
+*it can be achieved through method overloading and method overriding.
+*method overloading: same method name with different parameters.
+*method overriding: redefining a method in a subclass that already exists in the parent class.
+*ex:-class Animal {
+    void sound() {
+        System.out.println("Animal makes sound");
+    }
+}   
+class Dog extends Animal {
+    @Override
+    void sound() {
+        System.out.println("Dog barks");
+    }
+}   
+
+package day1;       
